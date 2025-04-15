@@ -1,44 +1,35 @@
 # Release Notes Template
 
 > Based off [https://palantir.quip.com/pzRwAVr1bpzf](https://palantir.quip.com/pzRwAVr1bpzf)
-01234567890123456789012345678901234567890123456789012345678901234567890123456789
-Pro-tip: look through the github diff between the previous release to see what's
-changed. The commit titles should give an outline of what's happened.
+
+Pro-tip: look through the github diff between the previous release to see what's changed. The commit titles should give an outline of what's happened.
 
 ## Upgrade Steps
 
-- List out, as concretely as possible, any steps users have to take when
- they upgrade beyond just dumping the dependency.
+- List out, as concretely as possible, any steps users have to take when they upgrade beyond just dumping the dependency.
 - Write pseudocode that highlights what code should change and how.
-- Call out if users are recommended to upgrade because of known problems
-with older releases.
+- Call out if users are recommended to upgrade because of known problems with older releases.
 - Preferably, there's nothing here.
 
 ### Breaking Changes
 
-- A complete list of breaking changes (preferably there are none, unless
- this is a major version).
+- A complete list of breaking changes (preferably there are none, unless this is a major version).
 
 ### New Features
 
-- Describe the new feature and when/why to use it. Add some pictures!
- Call out any caveats/warnings? Is it a beta feature?
+- Describe the new feature and when/why to use it. Add some pictures! Call out any caveats/warnings? Is it a beta feature?
 
 ### Bug Fixes
 
-- Call out any existing feature/functionality that now works as intended
- or expected.
+- Call out any existing feature/functionality that now works as intended or expected.
 
 ### Improvements
 
-- Improvements/enhancements to a workflow, performance, logging,
- error messaging, or user experience
+- Improvements/enhancements to a workflow, performance, logging, error messaging, or user experience
 
 ### Other Changes
 
-- Other miscellaneous changes that don't fit into any of the above
- categories. Try to leave this empty - ideally, all changes fit
- into the categories above
+- Other miscellaneous changes that don't fit into any of the above categories. Try to leave this empty - ideally, all changes fit into the categories above
 
 ------
 
