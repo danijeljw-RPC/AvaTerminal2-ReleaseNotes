@@ -1,38 +1,18 @@
-name: Lint Markdown
+name: Markdown Lint
 
 on:
+  push:
+    paths:
+      - "**.md"
   pull_request:
     paths:
       - "**.md"
-  push:
-    branches:
-      - main
 
 jobs:
-  markdownlint:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Install markdownlint-cli
-        run: npm install -g markdownlint-cli
-
-      # 🔧 Pre-lint: Normalize Markdown EOL
-      - name: Fix Markdown EOL
-        shell: bash
-        run: |
-          find . -type f -name "*.md" | while read -r file; do
-            # Remove all trailing newlines
-            awk 'BEGIN { ORS="" } { print $0 "\n" }' "$file" > tmp.md && mv tmp.md "$file"
-            # Ensure exactly 1 newline at EOF
-            printf "\n" >> "$file"
-          done
-
-      - name: Lint Markdown files
-        run: markdownlint "**/*.md"
+      - name: Lint Markdown
+        uses: actionshub/markdownlint@main
